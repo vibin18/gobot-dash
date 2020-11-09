@@ -123,3 +123,7 @@ func OdomUpdate() {
 	// freeze main loop
 	select {}
 }
+
+func init() {
+	go OdomUpdate()
+}
